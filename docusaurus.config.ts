@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Rafael Ledo',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Software Developer',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
