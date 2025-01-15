@@ -11,22 +11,24 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Fullstack Developer',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Starting with C/C++ on simple college projects.
+        Learned Java in back-end. At this date, having at least
+        20+ languages and frameworks used. Professional experience in at
+        least 10 of them.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Since 2019',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Experience on multiple College and Freelance projects.
+        Learning technologies from bottom to top. Including assembly.
       </>
     ),
   },
