@@ -31,12 +31,12 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Using Triple OS',
+    Svg: require('@site/static/img/triple-os.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Generic workflow for NixOS, ArchLinux and Windows with Github monorepo.
+        Focus on adaptivity.
       </>
     ),
   },
