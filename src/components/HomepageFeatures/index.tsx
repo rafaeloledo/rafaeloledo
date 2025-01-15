@@ -28,7 +28,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Experience on multiple College and Freelance projects.
-        Learning technologies from bottom to top. Including assembly.
+        Learning technologies from bottom to top. Including assembly. From System Analysis and Development
+        at IFBA to Computer Science at UNIFACS.
       </>
     ),
   },
