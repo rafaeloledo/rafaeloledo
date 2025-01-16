@@ -61,28 +61,15 @@ const config: Config = {
           items: [
             {
               label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://stackoverflow.com/users/16272548/rafael-ledo",
             },
             {
               label: "X",
-              href: "https://x.com/docusaurus",
+              href: "https://x.com/rafaeloledo",
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "Pages",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
+              href: "https://github.com/rafaeloledo",
             },
           ],
         },
