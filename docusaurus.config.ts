@@ -52,6 +52,12 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "Rafael Ledo",
+      items: [
+        {
+          label: "Blog",
+          href: "/blog",
+        }
+      ],
     },
     footer: {
       style: "dark",
