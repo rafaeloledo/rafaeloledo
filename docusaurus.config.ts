@@ -54,7 +54,7 @@ const config: Config = {
       title: "Rafael Ledo",
       items: [
         {
-          label: "Blog",
+          label: "Open Source Activity",
           href: "/blog",
         }
       ],
