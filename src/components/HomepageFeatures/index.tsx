@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Generic workflow for NixOS, ArchLinux and Windows with Github monorepo.
-        Focus on adaptivity. Rights reserved to ArchLinux Foundation, NixOS Foundation and Microsoft from above icons.
+        Focus on adaptivity. Rights reserved to NixOS Foundation, ArchLinux Foundation and Microsoft from above icons.
       </>
     ),
   },
