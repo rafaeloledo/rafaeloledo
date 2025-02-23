@@ -56,7 +56,11 @@ const config: Config = {
         {
           label: "Open Source Activity",
           href: "/blog",
-        }
+        },
+        {
+          label: "Contact Me",
+          href: "/contact"
+        },
       ],
     },
     footer: {

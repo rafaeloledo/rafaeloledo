@@ -11,35 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'FullStack Developer',
-    Svg: require('@site/static/img/code.svg').default,
+    title: 'Email',
+    Svg: require('@site/static/img/email-outline.svg').default,
     description: (
       <>
-        Starting with C/C++ on simple college projects.
-        Learned Java in back-end. At this date, having at least
-        20+ languages and frameworks used. Professional experience in at
-        least 10 of them.
+        rafaeloliveiraledo@gmail.com
       </>
     ),
   },
   {
-    title: 'Since 2019',
-    Svg: require('@site/static/img/books.svg').default,
+    title: 'WhatsApp',
+    Svg: require('@site/static/img/whatsapp.svg').default,
     description: (
       <>
-        Experience on multiple College and Freelance projects.
-        Learning technologies from bottom to top. Including assembly. System Analysis and Development
-        at IFBA and Computer Science at UNIFACS.
+        +55 71 98105-9738
       </>
     ),
   },
   {
-    title: 'Using Triple OS',
-    Svg: require('@site/static/img/triple-os.svg').default,
+    title: 'LinkedIn',
+    Svg: require('@site/static/img/social-linkedin.svg').default,
     description: (
       <>
-        Generic workflow for NixOS, ArchLinux and Windows with Github monorepo.
-        Focus on adaptivity. Rights reserved to NixOS Foundation, ArchLinux Foundation and Microsoft from above icons.
+        https://linkedin.com/in/rafaeloledo
       </>
     ),
   },
@@ -59,7 +53,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function ContactFeatures(): ReactNode {
   return (
     <>
       <section className={styles.features}>
