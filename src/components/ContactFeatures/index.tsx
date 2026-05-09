@@ -14,27 +14,27 @@ const FeatureList: FeatureItem[] = [
     title: 'Email',
     Svg: require('@site/static/img/email-outline.svg').default,
     description: (
-      <>
+      <a href="mailto:rafaeloliveiraledo@gmail.com" className={styles.contactLink}>
         rafaeloliveiraledo@gmail.com
-      </>
+      </a>
     ),
   },
   {
     title: 'WhatsApp',
     Svg: require('@site/static/img/whatsapp.svg').default,
     description: (
-      <>
+      <a href="https://wa.me/5571981059738" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
         +55 71 98105-9738
-      </>
+      </a>
     ),
   },
   {
     title: 'LinkedIn',
     Svg: require('@site/static/img/social-linkedin.svg').default,
     description: (
-      <>
-        https://linkedin.com/in/rafaeloledo
-      </>
+      <a href="https://linkedin.com/in/rafaeloledo" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/rafaeloledo
+      </a>
     ),
   },
 ];
