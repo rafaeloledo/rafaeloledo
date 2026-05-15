@@ -6,7 +6,7 @@
   "packageManager": "bun@1.1.38",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit"
   },
