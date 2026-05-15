@@ -21,9 +21,7 @@ yarn-error.log*
 
 # Bun
 bun.lockb
+bun.lock
 
 # TypeScript build info
 *.tsbuildinfo
-
-# npm (we use bun)
-package-lock.json
