@@ -22,8 +22,10 @@ most of my heart on **developer tools, terminal workflows, and the web platform*
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="text-xs text-base-content/50 mb-1"><span className="text-primary">$</span> cat ~/about.md</div>
-      <h1 className="text-2xl font-bold mb-6">About</h1>
+      <div className="hud-label mb-2">§ dossier · cat ~/about.md</div>
+      <h1 className="display-serif mb-8">
+        <span className="glitch" data-text="Profile">Profile</span>
+      </h1>
       <Markdown>{md.trim()}</Markdown>
     </div>
   );

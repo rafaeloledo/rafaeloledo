@@ -103,18 +103,24 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
   return (
     <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm grid place-items-start pt-[12vh] px-4" onClick={onClose}>
       <div
-        className="w-full max-w-xl bg-base-100 border border-base-300 rounded-lg shadow-2xl overflow-hidden"
+        className="w-full max-w-xl bg-base-100 border border-secondary/40 shadow-2xl overflow-hidden relative"
         onClick={(e) => e.stopPropagation()}
+        style={{ boxShadow: '0 0 30px color-mix(in oklch, var(--color-secondary) 25%, transparent)' }}
       >
+        <div className="chrome-bar" />
+        <div className="flex items-center gap-2 px-3 py-1 border-b border-base-300 text-[0.6rem] tracking-widest uppercase text-secondary/70 font-mono">
+          <span>// net-dive · interface</span>
+          <span className="ml-auto opacity-60">YoRHa-S9</span>
+        </div>
         <div className="flex items-center gap-2 px-3 py-2.5 border-b border-base-300">
-          <Search size={14} className="text-base-content/50" />
+          <Search size={14} className="text-secondary" />
           <input
             ref={inputRef}
             value={q}
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={onKey}
-            placeholder="Search posts, pages, links…"
-            className="flex-1 bg-transparent outline-none text-sm placeholder:text-base-content/40"
+            placeholder="query > posts, pages, links…"
+            className="flex-1 bg-transparent outline-none text-sm placeholder:text-base-content/40 font-mono"
           />
           <kbd className="kbd kbd-xs">esc</kbd>
         </div>

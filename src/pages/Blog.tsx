@@ -29,10 +29,10 @@ export default function Blog() {
   return (
     <div className="space-y-6">
       <div>
-        <div className="text-xs text-base-content/50 mb-1">
-          <span className="text-primary">$</span> ls ~/posts
-        </div>
-        <h1 className="text-2xl font-bold">Blog</h1>
+        <div className="hud-label mb-2">§ archive · /posts</div>
+        <h1 className="display-serif">
+          <span className="glitch" data-text="Transmissions">Transmissions</span>
+        </h1>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3">
@@ -65,7 +65,7 @@ export default function Blog() {
         </div>
       </div>
 
-      <ul className="divide-y divide-base-300 border border-base-300 rounded-lg overflow-hidden">
+      <ul className="divide-y divide-base-300 border border-base-300 overflow-hidden bg-base-200/20">
         {filtered.length === 0 && (
           <li className="px-4 py-8 text-sm text-base-content/50 text-center">no posts matched</li>
         )}

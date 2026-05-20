@@ -28,9 +28,11 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="text-xs text-base-content/50 mb-1"><span className="text-primary">$</span> ls ~/projects</div>
-      <h1 className="text-2xl font-bold mb-2">Projects</h1>
-      <p className="text-base-content/70 mb-8">A short list of things I've built or contributed to.</p>
+      <div className="hud-label mb-2">§ deployments · ls ~/projects</div>
+      <h1 className="display-serif mb-3">
+        <span className="glitch" data-text="Projects">Projects</span>
+      </h1>
+      <p className="text-base-content/70 mb-8"><span className="text-secondary">&gt;</span> things built or contributed to.</p>
 
       <ul className="space-y-3">
         {projects.map((p) => (
@@ -39,7 +41,7 @@ export default function Projects() {
               href={p.url}
               target="_blank"
               rel="noreferrer"
-              className="block border border-base-300 rounded-lg p-4 hover:border-primary/60 hover:bg-base-200/40 transition group"
+              className="block border border-base-300 p-4 hover:border-primary/60 hover:bg-base-200/40 transition group relative"
             >
               <div className="flex items-center gap-2 mb-1">
                 {p.icon === 'pr' ? (

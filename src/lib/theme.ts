@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-export type Theme = 'terminal-dark' | 'terminal-light';
+export type Theme = 'yorha-dark' | 'yorha-light';
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof document === 'undefined') return 'terminal-dark';
-    return (document.documentElement.getAttribute('data-theme') as Theme) || 'terminal-dark';
+    if (typeof document === 'undefined') return 'yorha-dark';
+    return (document.documentElement.getAttribute('data-theme') as Theme) || 'yorha-dark';
   });
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export function useTheme() {
     } catch {}
   }, [theme]);
 
-  const toggle = () => setTheme((t) => (t === 'terminal-dark' ? 'terminal-light' : 'terminal-dark'));
+  const toggle = () => setTheme((t) => (t === 'yorha-dark' ? 'yorha-light' : 'yorha-dark'));
 
   return { theme, setTheme, toggle };
 }

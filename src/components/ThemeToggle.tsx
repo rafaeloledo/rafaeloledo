@@ -5,7 +5,7 @@ import { useTheme } from '../lib/theme';
 export function ThemeToggle() {
   const { theme, toggle } = useTheme();
   const btn = useRef<HTMLButtonElement>(null);
-  const isDark = theme === 'terminal-dark';
+  const isDark = theme === 'yorha-dark';
 
   const onClick = () => {
     toggle();
@@ -20,12 +20,12 @@ export function ThemeToggle() {
     <button
       ref={btn}
       onClick={onClick}
-      className="btn btn-sm btn-ghost btn-circle"
+      className="btn btn-ghost btn-circle"
       aria-label="Toggle theme"
       title={`Switch to ${isDark ? 'light' : 'dark'}`}
     >
       <span className="grid place-items-center transition-transform duration-300" style={{ transform: isDark ? 'rotate(0deg)' : 'rotate(180deg)' }}>
-        {isDark ? <Moon size={16} /> : <Sun size={16} />}
+        {isDark ? <Moon size={18} /> : <Sun size={18} />}
       </span>
     </button>
   );
