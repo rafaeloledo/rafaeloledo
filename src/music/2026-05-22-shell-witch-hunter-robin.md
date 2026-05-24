@@ -2,9 +2,11 @@
 slug: shell-witch-hunter-robin
 title: Shell - Witch Hunter Robin
 date: 2026-05-22
-description: Tema de abertura do anime Witch Hunter Robin (2002), cantada por Bana com composição de Yoko Kanno.
-tags: [anime, yoko-kanno, j-pop, 2002]
+description: Tema de abertura do anime Witch Hunter Robin (2002), cantada por Bana com composição de Hideyuki Daichi Suzuki e letra de Hitomi Mieno.
+tags: [anime, bana, hideyuki, j-pop, 2002]
 artist: Bana
+composer: Hideyuki Daichi Suzuki
+lyricist: Hitomi Mieno
 anime: Witch Hunter Robin
 year: 2002
 thumb: /music/shell-witch-hunter-robin.svg
@@ -12,78 +14,88 @@ thumb: /music/shell-witch-hunter-robin.svg
 
 ## Letra Original (日本語)
 
-暗闇の中を　さまよいながら  
-あなたの声だけ　探していた  
-消えそうな心で　立ち尽くして  
-どこへ向かえばいい
+瞳を伏せると　すぐ消えてしまいそうで  
+自分が見知らぬ他人になった気がする  
+悲しいほどちっぽけな
 
-シェル  
-シェル  
-包んでくれる殻よ  
-シェル  
-シェル  
-私の心を守れ
+救われたいからため息を付くのじゃなく  
+掻き出してしまった孤独の気配を  
+数をただ数えていた
 
-星もない夜に　一人で歩く  
-冷たい風さえ　追い風になる  
-迷いながらも　進んでいける  
-あなたがいるから
+乾いた時間の中で  
+溺れてるもがいてる心  
+眩暈がするくらいの嘘  
+受け止めて引き裂いた  
+そして私が迷い込むのは  
+薄闇の世界
 
-シェル  
-シェル  
-包んでくれる殻よ  
-シェル  
-シェル  
-私の心を守れ
+信じるべきもののために選んだ場所は  
+自由を鍵にした檻の中でしょう  
+決してもう抜け出せない
 
-燃え上がる炎よ　消えないでいて  
-どんな嵐でも　共に越えよう  
-脆い翼でも　空に向かって  
-羽ばたくことができる
+乾いた喉の奥で  
+始まった儚さのわけは  
+近づく明日が怖いから  
+蹲り崩れても  
+私を探して囁きかける  
+薄闇の声
 
-シェル  
-シェル  
-包んでくれる殻よ  
-シェル  
-シェル  
-永遠に守れ
+---
+
+## Romaji
+
+Hitomi wo fuseruto sugu kiete shimai sou de  
+Jibun ga mishiranu tanin ni natta ki ga suru  
+Kanashii hodo chippoke na
+
+Sukuwaretai kara tameiki wo tsuku no ja naku  
+Kakidashite shimatta kodoku no kehai wo  
+Kazu wo tada kazoeteita
+
+Kawaita jikan no naka de  
+Oboreteru mogaiteteru kokoro  
+Memai ga suru kurai no uso  
+Ukete tome hikisaita  
+Soshite watashi ga mayoikomu no wa  
+Usuyami no sekai
+
+Shinjiru beki mono no tame ni eranda basho wa  
+Jiyuu wo kagi ni shita ori no naka deshou  
+Kesshite mou nukedase nai
+
+Kawaita nodo no oku de  
+Hajimatta hakanasa no wake wa  
+Chikazuku ashita ga kowai kara  
+Uzukumari kuzurete mo  
+Watashi wo sagashite sasayakikakeru  
+Usuyami no koe
 
 ---
 
 ## English Translation
 
-Wandering through the darkness  
-I was searching only for your voice  
-Standing still with a fading heart  
-Not knowing where to go
+When I close my eyes, it seems like I'll disappear  
+I feel like I've become a stranger to myself  
+Sadly, how small I've become
 
-Shell  
-Shell  
-Oh shell that wraps around me  
-Shell  
-Shell  
-Protect my heart
+Not sighing because I want to be saved  
+I was just counting  
+The traces of loneliness I had dug out
 
-Walking alone on a starless night  
-Even the cold wind becomes a tailwind  
-I can keep moving forward, even while lost  
-Because you are here
+In the dry passage of time  
+My heart, drowning, struggling  
+A lie so great it makes me dizzy  
+I accepted it and tore myself apart  
+And the place I wander into  
+Is a world of thin darkness
 
-Shell  
-Shell  
-Oh shell that wraps around me  
-Shell  
-Shell  
-Protect my heart
+The place I chose for the sake of what I should believe in  
+Is probably a cage locked with freedom  
+I can never escape from it anymore
 
-Oh burning flame, please don't go out  
-Through any storm, let us overcome together  
-Even with fragile wings, toward the sky  
-I can still take flight
-
-Shell  
-Shell  
-Oh shell that wraps around me  
-Shell  
-Shell  
-Protect forever
+In the back of my dry throat  
+The reason for this fragility that has begun  
+Is because I'm afraid of tomorrow drawing near  
+Even if I crouch and collapse  
+It whispers, searching for me —  
+A voice from the thin darkness
