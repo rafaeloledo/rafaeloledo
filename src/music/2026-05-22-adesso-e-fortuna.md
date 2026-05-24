@@ -2,78 +2,145 @@
 slug: adesso-e-fortuna
 title: Adesso e Fortuna ～炎と永遠～
 date: 2026-05-22
-description: Nobuo Uematsu's brief Latin lament from Final Fantasy VIII — flame and eternity in under a minute.
-artist: Nobuo Uematsu / Izumi Masuda
-anime: Final Fantasy VIII
-year: 1999
+description: Tema de abertura do OVA Record of Lodoss War (1990), cantada por Sherry (Kato Izumi) com composição e letra de Akino Arai.
+tags: [ost, anime, akino-arai, sherry, j-pop, 1990]
+artist: Sherry (Kato Izumi)
+composer: Akino Arai
+lyricist: Akino Arai
+arranger: Hagita Mitsuo
+anime: Record of Lodoss War (ロードス島戦記)
+year: 1990
 thumb: /music/adesso-e-fortuna.svg
-tags: [ost, jrpg, classical, vocal]
 ---
 
 ## Sobre a faixa
 
-"Adesso e Fortuna" (it. *agora e fortuna*), com subtítulo japonês **炎と永遠** (*honō to eien* — "chama e eternidade"), é uma peça vocal curta composta por **Nobuo Uematsu** para a trilha sonora de **Final Fantasy VIII** (1999). A faixa aparece no álbum oficial e serve como um leitmotiv recorrente em arranjos posteriores do ciclo de FFVIII — uma melodia que se materializa em pleno combate com Seifer e que retorna, transfigurada, em "The Castle" e nos arranjos do disco *Fithos Lusec Wecos Vinosec*.
+"Adesso e Fortuna" (it. *agora e a fortuna*), com subtítulo japonês **炎と永遠** (*honō to eien* — "chama e eternidade"), é o tema de abertura do OVA **Record of Lodoss War** (ロードス島戦記, 1990). A faixa mistura versos em japonês com o refrão em italiano — "Io sono prigioniera" (*sou uma prisioneira*) —, criando uma atmosfera de encantamento e cativeiro que espelha o mundo de fantasia da série.
 
-A vocalista creditada na gravação original é **Izumi Masuda**, que canta em latim clássico — uma escolha estética que conecta a peça ao tema de abertura "Liberi Fatali", também em latim, formando o eixo litúrgico da obra.
+A letra e a composição são de **Akino Arai** (新居昭乃), com arranjo de **Hagita Mitsuo** (萩田光雄). A vocalista é **Sherry**, nome artístico de **Kato Izumi**.
 
 ## Por que essa faixa
 
-O que torna "Adesso e Fortuna" notável não é a complexidade harmônica, mas o gesto: Uematsu pega um motivo melódico simples, veste-o em latim e o injeta dentro de um confronto. O resultado é uma cena de batalha que soa como um *requiem* — chama e eternidade simultâneas, como diz o subtítulo. É um dos primeiros exemplos, dentro do cânone dos JRPGs, de uso de canto coral/solista em latim com função narrativa (não apenas ambiental).
+O que torna "Adesso e Fortuna" marcante é a tensão entre o japonês intimista dos versos e o italiano declarativo do refrão. Os versos constroem uma cena delicada — luz da lua, dedos que não esfriaram, olhos escuros que não revelam nada — enquanto o refrão em italiano irrompe como uma confissão: *sou uma prisioneira*. É uma das faixas mais memoráveis da era dos OVAs dos anos 90.
 
 ## Notas
 
-- O latim usado nas letras é cantado com pronúncia eclesiástica italiana, não restaurada.
-- O motivo principal reaparece em "The Castle", "The Extreme" e em arranjos do *Piano Collections: Final Fantasy VIII*.
-- O subtítulo japonês 炎と永遠 não é uma tradução literal do italiano "Adesso e Fortuna" — funciona como uma glosa poética paralela.
+- O título italiano "Adesso e Fortuna" não é traduzido literalmente pelo subtítulo japonês 炎と永遠 — ambos funcionam como leituras paralelas da mesma sensação.
+- A série Record of Lodoss War foi adaptada a partir de replays de campanhas de RPG publicados na revista Comptiq, tornando-se um dos OVAs de fantasia mais influentes do Japão.
+- Akino Arai é também conhecida por "Counterpoint" (Haibane Renmei) e outras composições de anime dos anos 90.
 
-> Composição: Nobuo Uematsu · Arranjo: Shiro Hamaguchi · Vocal: Izumi Masuda · Selo: DigiCube / Square Enix (1999)
+> 作詞・作曲：新居昭乃　編曲：萩田光雄　歌：Sherry
 
 ---
 
-## Letra Original (Latina)
+## Letra Original (日本語・Italiano)
 
-Excitate vos e somno, liberi mei  
-Cunae sunt non  
-Excitate vos e somno, liberi fatali  
-Somnus est non
+月あかり　風の羽音に降りる  
+蒼い水の上の夜  
+いつまでも冷めやらぬ指先で  
+想いをつづる
 
-Surgite  
-Invenite hortum veritatis
+Io sono prigioniera  
+魔法の鎖につながれて  
+Io sono prigioniera  
+あなたに囚われた
 
-Ardente veritate  
-Imbutus  
-Fluit lumen
+今夜あなたは  
+私をやさしく包んでくれた  
+けれど朝の日に照らしても  
+黒い瞳は何も語らない
 
-Aeternitas  
-Pulchra et fera  
-Quae olim erat et iterum erit
+あなたを愛したい  
+なぜかあなたが怖い  
+戸惑いを感じながら
 
-Adesso e fortuna  
-Adesso e fortuna  
-Honō to eien  
-Honō to eien
+Io sono prigioniera  
+魔法の鎖につながれて  
+Io sono prigioniera  
+あなたに囚われた
+
+炎よ　燃え続けて  
+遠い星のように  
+永遠に　消えないでいて  
+あなたの温もり
+
+Io sono prigioniera  
+魔法の鎖につながれて  
+Io sono prigioniera  
+adesso e fortuna
+
+---
+
+## Romaji
+
+Tsukiakari, kaze no haoto ni oriru  
+Aoi mizu no ue no yoru  
+Itsumade mo sameyaranu yubisaki de  
+Omoi wo tsuzuru
+
+Io sono prigioniera  
+Mahō no kusari ni tsunagarete  
+Io sono prigioniera  
+Anata ni torawareta
+
+Konya anata wa  
+Watashi wo yasashiku tsutsunde kureta  
+Keredo asa no hi ni terashite mo  
+Kuroi hitomi wa nani mo katara nai
+
+Anata wo aishitai  
+Naze ka anata ga kowai  
+Tomadoi wo kanjinagara
+
+Io sono prigioniera  
+Mahō no kusari ni tsunagarete  
+Io sono prigioniera  
+Anata ni torawareta
+
+Honoo yo, moetsuzukete  
+Tooi hoshi no yō ni  
+Towa ni, kienaide ite  
+Anata no nukumori
+
+Io sono prigioniera  
+Mahō no kusari ni tsunagarete  
+Io sono prigioniera  
+Adesso e fortuna
 
 ---
 
 ## English Translation
 
-Awaken from sleep, my children  
-There are no cradles  
-Awaken from sleep, fated children  
-There is no slumber
+Moonlight falls through the sound of wings on the wind  
+On the night above the blue water  
+With fingertips that never grow cold  
+I weave my thoughts
 
-Arise  
-Find the garden of truth
+I am a prisoner  
+Bound by magical chains  
+I am a prisoner  
+Captive to you
 
-Steeped in  
-The burning truth  
-The light flows
+Tonight you  
+Wrapped me gently in your arms  
+But even illuminated by the morning sun  
+Your dark eyes say nothing
 
-Eternity  
-Beautiful and fierce  
-What once was and shall be again
+I want to love you  
+But somehow I am afraid of you  
+Feeling uncertain
 
-Now and fortune  
-Now and fortune  
-Flame and eternity  
-Flame and eternity
+I am a prisoner  
+Bound by magical chains  
+I am a prisoner  
+Captive to you
+
+Oh flame, keep burning  
+Like a distant star  
+Forever, don't fade away  
+Your warmth
+
+I am a prisoner  
+Bound by magical chains  
+I am a prisoner  
+Now and fortune
