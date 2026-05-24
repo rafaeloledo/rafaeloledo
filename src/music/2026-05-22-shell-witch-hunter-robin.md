@@ -2,9 +2,10 @@
 slug: shell-witch-hunter-robin
 title: Shell - Witch Hunter Robin
 date: 2026-05-22
-description: Tema de abertura do anime Witch Hunter Robin (2002), cantada por Bana com composição de Yoko Kanno.
-tags: [anime, yoko-kanno, j-pop, 2002]
+description: Tema de abertura do anime Witch Hunter Robin (2002), cantada por Bana com composição de Hideyuki.
+tags: [anime, bana, hideyuki, j-pop, 2002]
 artist: Bana
+composer: Hideyuki
 anime: Witch Hunter Robin
 year: 2002
 thumb: /music/shell-witch-hunter-robin.svg
