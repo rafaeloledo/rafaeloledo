@@ -1,38 +1,66 @@
 ---
 title: "vscode@1.104.1: Remove unnecessary quotes in notes"
 date: 2025-09-21
-description: Removes redundant quotes from the VS Code post-install notes in the Scoop Extras bucket.
+description: "QoL change. Removing annoying quotes."
 repo: ScoopInstaller/Extras
 pr_url: https://github.com/ScoopInstaller/Extras/pull/16081
 pr_number: 16081
 status: merged
-tags: [scoop, vscode, windows, packaging]
+tags: ["hacktoberfest", "scoop", "scoop-apps", "scoop-bucket"]
 ---
 
 ## Context
 
-[ScoopInstaller/Extras](https://github.com/ScoopInstaller/Extras) is the Scoop bucket for packages that don't fit the strict criteria of the Main bucket — including GUI apps, browser extensions, and larger tools like VS Code.
+📦 The Extras bucket for Scoop.
+
+Repository: [ScoopInstaller/Extras](https://github.com/ScoopInstaller/Extras)
+
+Homepage: <https://scoop.sh>
 
 ## What this PR does
 
-The `vscode` manifest's `notes` field contained unnecessary surrounding quotes that appeared literally in the terminal output after installation. This made the post-install message look like:
+QoL change. Removing annoying quotes.
 
-```
-"Run 'code' to start Visual Studio Code."
-```
+https://github.com/user-attachments/assets/ebadb603-fa35-46d3-9352-b03ef4c8802e
 
-Instead of the intended:
+Make it the same as `sublime-text`:
+<img width="1084" height="329" alt="image" src="https://github.com/user-attachments/assets/df7108dc-7641-448b-98cb-f793fdec832e" />
 
-```
-Run 'code' to start Visual Studio Code.
-```
+<!-- Provide a general summary of your changes in the title above -->
 
-The fix removes the outer quotes, so the message renders correctly without the extra punctuation artifacts.
+<!--
+  By opening this PR you confirm that you have searched for similar issues/PRs here already.
+  Failing to do so will most likely result in closing of this PR without any explanation.
+  It is also mandatory to open a relevant issue (either Package Request or Bug Report) for
+  discussion with the maintainers, before creating any new PR.
+  Read the contributing guide first to save both your and our time.
+-->
 
-## Why care about quotes in a JSON file?
+Relates to:
+- https://github.com/ScoopInstaller/Main/issues/7061
 
-The Scoop Extras bucket has thousands of manifests maintained by contributors worldwide. Consistent, clean output matters for user experience — especially for VS Code, one of the most installed packages in the entire ecosystem. Every install of VS Code on Windows via Scoop would hit this cosmetic bug.
+<!--
+Closes #XXXX
+or
+Relates to #XXXX
+-->
 
-## Status
+- [X] Use conventional PR title: `<manifest-name[@version]|chore>: <general summary of the pull request>`
+- [X] I have read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) <!-- where the first check box is documented, in case you don't read. -->
 
-✅ **Merged** into `ScoopInstaller/Extras`.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+* **Documentation**
+  * Updated user-facing notes to remove unnecessary quotes around registry import commands, improving readability and copy/paste accuracy.
+  * This change is purely textual/formatting; no impact on installation flow, uninstallation, versions, URLs, integrity checks, architectures, or post-install behavior.
+  * Clarifies display of commands to reduce confusion while preserving all existing functionality and controls.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+## Files changed
+
+- `bucket/vscode.json` (+3 −3)
+

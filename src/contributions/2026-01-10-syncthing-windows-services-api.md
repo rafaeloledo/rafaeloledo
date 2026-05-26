@@ -1,33 +1,80 @@
 ---
-title: "feat(cmd, osutil): implement Windows Services API communication"
+title: "feat(cmd, osutil): implement Windows Services API communication (fixes #7042)"
 date: 2026-01-10
-description: Implements native Windows Services API integration so Syncthing can be managed as a proper Windows Service.
+description: "The purpose of this change is related to https://github.com/syncthing/docs/pull/955. Since `--no-console` is being discouraged on Windows 11 due to `Windows Terminal` being the new default \"console\"."
 repo: syncthing/syncthing
 pr_url: https://github.com/syncthing/syncthing/pull/10524
 pr_number: 10524
 status: open
-tags: [go, windows, syncthing, systems]
+tags: ["go", "p2p", "peer-to-peer", "synchronization"]
 ---
 
 ## Context
 
-[Syncthing](https://syncthing.net/) is an open-source continuous file synchronization program written in Go. It's used by millions of people worldwide to sync files between devices without a central server.
+Open Source Continuous File Synchronization
 
-## The problem
+Repository: [syncthing/syncthing](https://github.com/syncthing/syncthing)
 
-When Syncthing runs as a Windows Service, it needs a way to communicate its status and receive control signals (start, stop, pause) via the Windows Service Control Manager (SCM). Without this, the OS can't properly manage the process lifecycle — it can't gracefully stop the service, report its state to Task Manager, or integrate with system monitoring tools.
+Homepage: <https://syncthing.net/>
 
 ## What this PR does
 
-Implements the Windows Services API communication layer using `golang.org/x/sys/windows/svc`. This allows Syncthing to:
+### Purpose
 
-- Register as a proper Windows Service
-- Receive and handle SCM control signals (`SERVICE_CONTROL_STOP`, `SERVICE_CONTROL_PAUSE`, etc.)
-- Report status transitions back to the SCM (starting, running, stopping)
-- Integrate cleanly with `sc.exe`, PowerShell's service cmdlets, and Task Manager
+The purpose of this change is related to https://github.com/syncthing/docs/pull/955. Since `--no-console` is being discouraged on Windows 11 due to `Windows Terminal` being the new default "console".
 
-The implementation lives in `cmd/syncthing/` and `lib/osutil/` keeping platform-specific code isolated from the cross-platform core.
+Here, i'm adding support for the Windows Services API in the project. It can now communicate and act as a service for Windows Services Manager.
 
-## Status
+It's necessary to the service be able to Start and Stop on the Manager's GUI.
 
-🟢 **Open** — under review. This is a significant systems-level addition targeting Windows users who run Syncthing as a background service.
+https://github.com/user-attachments/assets/14c558ef-e6bb-41df-a154-2b58590dea92
+
+Currently, the Stop action is working in functionality, but it can be coded better.
+
+### Testing
+
+Run the following commands on Windows:
+
+Build the app with fake version
+
+```sh
+go run build.go --version v2.0.14
+```
+
+Then, create a service linked to the `syncthing.exe` path.
+
+```cmd
+sc create syncthing binPath="C:\repos\syncthing\bin\syncthing.exe --no-browser" start=auto DisplayName="syncthing"
+```
+
+Run the service
+
+```cmd
+sc start syncthing
+```
+
+Stop the service
+
+```cmd
+sc stop syncthing
+```
+
+Delete the service
+
+```cmd
+sc stop syncthing        (if running)
+sc delete syncthing
+```
+
+https://learn.microsoft.com/en-us/windows/win32/services/services
+
+## Authorship
+
+Name: rafaeloledo
+Email: rafaeloliveiraledo@gmail.com
+
+## Files changed
+
+- `cmd/syncthing/main.go` (+53 −0)
+- `lib/osutil/services_windows.go` (+76 −0)
+

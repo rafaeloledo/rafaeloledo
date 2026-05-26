@@ -1,34 +1,58 @@
 ---
 title: "pwsh: add Windows Terminal profile installation script"
-date: 2025-12-29
-description: Adds a PowerShell post-install script to automatically register an app's Windows Terminal profile.
+date: 2026-05-20
+description: "When you execute `winget install pwsh`, the profile is added automatically."
 repo: ScoopInstaller/Main
 pr_url: https://github.com/ScoopInstaller/Main/pull/7466
 pr_number: 7466
 status: closed
-tags: [scoop, powershell, windows, devtools]
+tags: ["scoop", "scoop-apps", "scoop-bucket"]
 ---
 
 ## Context
 
-[Scoop](https://scoop.sh/) is a command-line installer for Windows. The [ScoopInstaller/Main](https://github.com/ScoopInstaller/Main) bucket is the default package registry, containing manifests for hundreds of popular tools.
+📦 The default bucket for Scoop.
+
+Repository: [ScoopInstaller/Main](https://github.com/ScoopInstaller/Main)
+
+Homepage: <https://scoop.sh>
 
 ## What this PR does
 
-Adds a PowerShell post-install hook (`post_install`) to a package manifest that automatically registers a Windows Terminal profile for the installed application.
+When you execute `winget install pwsh`, the profile is added automatically.
 
-Without this, users have to manually edit their `settings.json` in Windows Terminal to add a profile for each new shell or tool they install — which is tedious and error-prone.
+Changes:  
+- Executing `powershell -ExecutionPolicy Bypass -File install-profile.ps1` will add the `pwsh` profile based on `SCOOP` env var.
+- Format notes  
 
-The script:
-1. Detects if Windows Terminal is installed
-2. Reads the user's `settings.json`
-3. Appends a properly formatted profile entry if one doesn't already exist
-4. Writes the file back safely
+One thing to note:  
+- The script may be signed to alter the execution policy from `Bypass`.
 
-## Why it matters
+<!-- Provide a general summary of your changes in the title above -->
 
-Scoop already automates the install; this closes the gap between "tool is installed" and "tool is usable from Windows Terminal" — making the whole developer onboarding smoother on Windows.
+<!--
+  By opening this PR you confirm that you have searched for similar issues/PRs here already.
+  Failing to do so will most likely result in closing of this PR without any explanation.
+  It is also mandatory to open a relevant issue (either Package Request or Bug Report) for
+  discussion with the maintainers, before creating any new PR.
+  Read the contributing guide first to save both your and our time.
 
-## Status
+  Automatic code review is supported but disabled by default in this repository.
+  You may trigger AI code review by requesting `Copilot` from the Reviewers menu,
+  or by commenting `@coderabbitai review`.
+-->
 
-🔴 **Closed** — the PR was closed without merge, likely due to maintainer policy around modifying user config files in post-install scripts.
+<!--
+Closes #XXXX
+or
+Relates to #XXXX
+-->
+
+- [x] Use conventional PR title: `<manifest-name[@version]|chore>: <general summary of the pull request>`
+- [x] I have read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) <!-- where the first check box is documented, in case you don't read. -->
+
+## Files changed
+
+- `bucket/pwsh.json` (+9 −2)
+- `scripts/pwsh/install-profile.ps1` (+73 −0)
+

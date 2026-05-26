@@ -1,35 +1,35 @@
 ---
 title: "neovide: Add context menu"
 date: 2024-12-29
-description: Adds a Windows Explorer context menu entry for Neovide via the Scoop Extras package manifest.
+description: "Equivalent of `alacritty` and `sublime-text`"
 repo: ScoopInstaller/Extras
 pr_url: https://github.com/ScoopInstaller/Extras/pull/13439
 pr_number: 13439
 status: merged
-tags: [scoop, neovide, neovim, windows, packaging]
+tags: ["hacktoberfest", "scoop", "scoop-apps", "scoop-bucket"]
 ---
 
 ## Context
 
-[Neovide](https://neovide.dev/) is a Neovim GUI client with smooth animations, written in Rust. It's a popular choice for developers who want the power of Neovim with a polished graphical interface. [ScoopInstaller/Extras](https://github.com/ScoopInstaller/Extras) distributes it on Windows.
+📦 The Extras bucket for Scoop.
+
+Repository: [ScoopInstaller/Extras](https://github.com/ScoopInstaller/Extras)
+
+Homepage: <https://scoop.sh>
 
 ## What this PR does
 
-Adds an "Open with Neovide" context menu entry to the Neovide Scoop manifest. Right-clicking a file in Windows Explorer shows a Neovide option that opens the file directly in the editor.
+Equivalent of `alacritty` and `sublime-text`
 
-The manifest registers the appropriate shell extension via Scoop's `post_install` hook:
+Relates to #12997
 
-```
-HKEY_CLASSES_ROOT\*\shell\Neovide\command → neovide.exe "%1"
-HKEY_CLASSES_ROOT\Directory\shell\Neovide\command → neovide.exe "%V"
-```
+🤗 Adding `neovide` in the context menu to have integrated blazingly fast Rust GUI experience on Windows.
 
-This covers both file and folder right-clicks — opening a file launches Neovide with that file, and opening a folder launches it in the directory context.
+- [x] I have read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
 
-## Companion PR
+## Files changed
 
-This was submitted alongside the WezTerm context menu PR (#13908) as part of a batch of terminal/editor context menu improvements for the Scoop Extras bucket.
+- `bucket/neovide.json` (+16 −0)
+- `scripts/neovide/install-context.reg` (+21 −0)
+- `scripts/neovide/uninstall-context.reg` (+8 −0)
 
-## Status
-
-✅ **Merged** into `ScoopInstaller/Extras`.

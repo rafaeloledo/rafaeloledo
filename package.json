@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "add-pr": "cargo run --quiet --release --manifest-path scripts/add-pr/Cargo.toml --"
+    "add-pr": "cargo run --quiet --release --manifest-path scripts/add-pr/Cargo.toml --",
+    "rebuild-prs": "cargo run --quiet --release --manifest-path scripts/add-pr/Cargo.toml -- --rebuild-all"
   },
   "dependencies": {
     "react": "^19.0.0",

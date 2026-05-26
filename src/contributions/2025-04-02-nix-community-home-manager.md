@@ -1,41 +1,76 @@
 ---
 title: "docs: add docs for mkOutOfStoreSymlink"
 date: 2025-04-02
-description: Documents the mkOutOfStoreSymlink function in the home-manager manual, which was previously undocumented despite being widely used.
+description: "<!--"
 repo: nix-community/home-manager
 pr_url: https://github.com/nix-community/home-manager/pull/6660
 pr_number: 6660
 status: merged
-tags: [nix, documentation, home-manager, linux]
+tags: ["dotfiles", "nix", "nix-dotfiles", "nixos", "nixpkgs"]
 ---
 
 ## Context
 
-[home-manager](https://github.com/nix-community/home-manager) is the de facto standard for managing user environments with Nix. It's used by thousands of developers on NixOS and macOS to declaratively configure their dotfiles, shells, editors, and tools.
+Manage a user environment using Nix  [maintainer=@khaneliman, @rycee]
 
-## The problem
+Repository: [nix-community/home-manager](https://github.com/nix-community/home-manager)
 
-`lib.file.mkOutOfStoreSymlink` is a home-manager utility that creates symlinks pointing *outside* the Nix store — useful when you want a managed config file to actually link to a mutable path (e.g., a dotfile in your home directory that you edit directly).
-
-Despite being referenced frequently in the home-manager forum, GitHub Issues, and community wikis, the function had **no entry in the official manual**. Users had to piece together how it worked from source code and third-party blog posts.
+Homepage: <https://nix-community.github.io/home-manager/>
 
 ## What this PR does
 
-Adds a dedicated section in the home-manager manual for `mkOutOfStoreSymlink`, covering:
+### Description
 
-- **Purpose** — when and why to use it over regular `home.file`
-- **Usage example** — a minimal working snippet
-- **Caveats** — the symlink won't be garbage-collected with the store path; the target must exist
+<!--
 
-```nix
-home.file.".config/nvim".source =
-  config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/nvim";
-```
+Please provide a brief description of your change.
 
-## Why this matters
+-->
 
-Documentation PRs are often the highest-leverage contributions to an open-source project. This one resolves a gap that generated repeated questions from the community — saving future users hours of confusion.
+### Checklist
 
-## Status
+<!--
 
-✅ **Merged** into `nix-community/home-manager`.
+Please go through the following checklist before opening a non-WIP
+pull-request.
+
+Also make sure to read the guidelines found at
+
+  https://nix-community.github.io/home-manager/#sec-guidelines
+
+-->
+
+- [x] Change is backwards compatible.
+
+- [ ] Code formatted with `./format`.
+
+- [ ] Code tested through `nix-shell --pure tests -A run.all`
+    or `nix build --reference-lock-file flake.lock ./tests#test-all` using Flakes.
+
+- [ ] Test cases updated/added. See [example](https://github.com/nix-community/home-manager/commit/f3fbb50b68df20da47f9b0def5607857fcc0d021#diff-b61a6d542f9036550ba9c401c80f00ef).
+
+- [ ] Commit messages are formatted like
+
+    ```
+    {component}: {description}
+
+    {long description}
+    ```
+
+    See [CONTRIBUTING](https://nix-community.github.io/home-manager/#sec-commit-style) for more information and [recent commit messages](https://github.com/nix-community/home-manager/commits/master) for examples.
+
+- If this PR adds a new module
+
+  - [ ] Added myself as module maintainer. See [example](https://github.com/nix-community/home-manager/blob/068ff76a10e95820f886ac46957edcff4e44621d/modules/programs/lesspipe.nix#L6).
+
+#### Maintainer CC
+
+<!--
+If you are updating a module, please @ people who are in its `meta.maintainers` list.
+If in doubt, check `git blame` for whoever last touched something.
+-->
+
+## Files changed
+
+- `modules/files.nix` (+8 −0)
+
