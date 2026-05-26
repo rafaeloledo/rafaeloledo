@@ -52,7 +52,10 @@ const modules = import.meta.glob('../contributions/*.md', {
   eager: true,
 }) as Record<string, string>;
 
+const EXCLUDED_FILES = new Set(['CLAUDE.md', 'PRBLACKLIST.md']);
+
 export const contributions: Contribution[] = Object.entries(modules)
+  .filter(([path]) => !EXCLUDED_FILES.has(path.split('/').pop()!))
   .map(([path, raw]) => {
     const { data, body } = parseFrontmatter(raw);
     const meta = fileNameToMeta(path);
