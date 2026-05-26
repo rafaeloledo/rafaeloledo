@@ -6,9 +6,10 @@ const links = [
   { to: '/', label: 'home', code: '01' },
   { to: '/blog', label: 'blog', code: '02' },
   { to: '/music', label: 'music', code: '03' },
-  { to: '/projects', label: 'projects', code: '04' },
-  { to: '/uses', label: 'uses', code: '05' },
-  { to: '/about', label: 'about', code: '06' },
+  { to: '/contributions', label: 'contrib', code: '04' },
+  { to: '/projects', label: 'projects', code: '05' },
+  { to: '/uses', label: 'uses', code: '06' },
+  { to: '/about', label: 'about', code: '07' },
 ];
 
 export function Nav({ onOpenPalette }: { onOpenPalette: () => void }) {

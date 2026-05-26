@@ -8,6 +8,8 @@ import Blog from './pages/Blog';
 import Post from './pages/Post';
 import Music from './pages/Music';
 import MusicPost from './pages/MusicPost';
+import Contributions from './pages/Contributions';
+import ContributionPost from './pages/ContributionPost';
 import About from './pages/About';
 // import Contact from './pages/Contact';
 import Uses from './pages/Uses';
@@ -38,6 +40,8 @@ export default function App() {
           <Route path="/blog/:slug" element={<Post />} />
           <Route path="/music" element={<Music />} />
           <Route path="/music/:slug" element={<MusicPost />} />
+          <Route path="/contributions" element={<Contributions />} />
+          <Route path="/contributions/:slug" element={<ContributionPost />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/uses" element={<Uses />} />
           <Route path="/about" element={<About />} />
