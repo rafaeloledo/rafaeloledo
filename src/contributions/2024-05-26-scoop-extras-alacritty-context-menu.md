@@ -30,8 +30,10 @@ Discovered and fixed a related bug in the Sublime Text manifest where the contex
 
 ## Relation to other PRs
 
-This PR was the earliest in a series of context menu additions I contributed to Scoop Extras (followed by Neovide #13439 and WezTerm #13908). It was closed without direct merge, but the fix did land in the repository — a follow-up PR was opened with the same change and I was credited as co-author on the merge.
+This PR was the earliest in a series of context menu additions I contributed to Scoop Extras (followed by Neovide #13439 and WezTerm #13908). During review, [jenbroek](https://github.com/jenbroek) pointed out an important Unicode path handling fix — paths with non-ASCII characters required `\"%V\"` instead of `%V` to avoid Alacritty failing to launch. After incorporating that feedback, I closed this PR and suggested the diffs be merged into jenbroek's complementary PR [#12997](https://github.com/ScoopInstaller/Extras/pull/12997).
+
+That PR — **"alacritty@0.13.2: Add Open with Alacritty context menu"** — was merged on June 4, 2024, with me credited as `Co-authored-by: rafaeloledo`.
 
 ## Status
 
-🔴 **Closed** — the PR itself was closed, but the context menu fix was merged through a follow-up PR with co-authorship credit.
+🔴 **Closed** — superseded by [#12997](https://github.com/ScoopInstaller/Extras/pull/12997), which was merged with co-authorship credit.
