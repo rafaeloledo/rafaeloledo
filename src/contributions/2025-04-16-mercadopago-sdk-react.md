@@ -37,4 +37,4 @@ import { createCardToken } from '@mercadopago/sdk-react/coreMethods';
 
 ## Status
 
-🔴 **Closed** — the SDK team addressed the underlying issue through a different approach in a subsequent release, making this specific fix unnecessary.
+🔴 **Closed** — the maintainer closed the PR without merging, but the fix itself was applied directly in the next release. The merge was considered unnecessary because the change was incorporated upstream — not because the fix was wrong.
