@@ -1,7 +1,7 @@
 ---
 title: "docs: add docs for mkOutOfStoreSymlink"
 date: 2025-04-02
-description: "<!--"
+description: "- [x] Change is backwards compatible."
 repo: nix-community/home-manager
 pr_url: https://github.com/nix-community/home-manager/pull/6660
 pr_number: 6660
@@ -21,24 +21,7 @@ Homepage: <https://nix-community.github.io/home-manager/>
 
 ### Description
 
-<!--
-
-Please provide a brief description of your change.
-
--->
-
 ### Checklist
-
-<!--
-
-Please go through the following checklist before opening a non-WIP
-pull-request.
-
-Also make sure to read the guidelines found at
-
-  https://nix-community.github.io/home-manager/#sec-guidelines
-
--->
 
 - [x] Change is backwards compatible.
 
@@ -64,11 +47,6 @@ Also make sure to read the guidelines found at
   - [ ] Added myself as module maintainer. See [example](https://github.com/nix-community/home-manager/blob/068ff76a10e95820f886ac46957edcff4e44621d/modules/programs/lesspipe.nix#L6).
 
 #### Maintainer CC
-
-<!--
-If you are updating a module, please @ people who are in its `meta.maintainers` list.
-If in doubt, check `git blame` for whoever last touched something.
--->
 
 ## Files changed
 

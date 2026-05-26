@@ -25,27 +25,8 @@ Similar to:
 Relates to:
 - https://github.com/ScoopInstaller/Main/issues/7061
 
-<!-- Provide a general summary of your changes in the title above -->
-
-<!--
-  By opening this PR you confirm that you have searched for similar issues/PRs here already.
-  Failing to do so will most likely result in closing of this PR without any explanation.
-  It is also mandatory to open a relevant issue (either Package Request or Bug Report) for
-  discussion with the maintainers, before creating any new PR.
-  Read the contributing guide first to save both your and our time.
--->
-
-<!--
-Closes #XXXX
-or
-Relates to #XXXX
--->
-
 - [x] Use conventional PR title: `<manifest-name[@version]|chore>: <general summary of the pull request>`
-- [x] I have read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) <!-- where the first check box is documented, in case you don't read. -->
-
-
-<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+- [x] I have read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) 
 
 ## Summary by CodeRabbit
 
@@ -53,8 +34,6 @@ Relates to #XXXX
   * Improved notes for enabling the 7‑Zip context menu.
   * Split guidance into clearer, multi-line steps for better readability.
   * Added the explicit command to run: reg import "$dir\install-context.reg".
-
-<!-- end of auto-generated comment: release notes by coderabbit.ai -->
 
 ## Files changed
 

@@ -188,6 +188,35 @@ fn yaml_escape(s: &str) -> String {
     s.replace('\\', "\\\\").replace('"', "\\\"")
 }
 
+fn strip_html_comments(s: &str) -> String {
+    let mut out = String::with_capacity(s.len());
+    let mut rest = s;
+    while let Some(start) = rest.find("<!--") {
+        out.push_str(&rest[..start]);
+        match rest[start..].find("-->") {
+            Some(end) => rest = &rest[start + end + 3..],
+            None => return out, // unterminated: drop the rest
+        }
+    }
+    out.push_str(rest);
+    // Collapse 3+ blank lines (left behind by stripped comments) into 2.
+    let mut cleaned = String::with_capacity(out.len());
+    let mut blank_run = 0;
+    for line in out.lines() {
+        if line.trim().is_empty() {
+            blank_run += 1;
+            if blank_run <= 1 {
+                cleaned.push('\n');
+            }
+        } else {
+            blank_run = 0;
+            cleaned.push_str(line);
+            cleaned.push('\n');
+        }
+    }
+    cleaned.trim().to_string()
+}
+
 fn build_markdown(
     pr_ref: &PrRef,
     pr: &Pr,
@@ -204,14 +233,11 @@ fn build_markdown(
     };
     let date = date_iso(pr);
 
-    let description = pr
-        .body
-        .as_deref()
-        .and_then(|b| {
-            b.lines()
-                .map(str::trim)
-                .find(|l| !l.is_empty() && !l.starts_with('#'))
-        })
+    let cleaned_body = pr.body.as_deref().map(strip_html_comments).unwrap_or_default();
+    let description = cleaned_body
+        .lines()
+        .map(str::trim)
+        .find(|l| !l.is_empty() && !l.starts_with('#'))
         .or(repo.description.as_deref())
         .unwrap_or("");
     let description = yaml_escape(description);
@@ -254,12 +280,11 @@ fn build_markdown(
     out.push('\n');
 
     out.push_str("## What this PR does\n\n");
-    match pr.body.as_deref() {
-        Some(b) if !b.trim().is_empty() => {
-            out.push_str(b.trim());
-            out.push('\n');
-        }
-        _ => out.push_str("_No description was provided in the pull request._\n"),
+    if cleaned_body.trim().is_empty() {
+        out.push_str("_No description was provided in the pull request._\n");
+    } else {
+        out.push_str(cleaned_body.trim());
+        out.push('\n');
     }
     out.push('\n');
 
