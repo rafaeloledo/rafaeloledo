@@ -16,7 +16,9 @@ Prefer the hydration script over hand-writing frontmatter:
 npm run add-pr -- <pr-url>
 ```
 
-It calls the GitHub API via `gh`, refuses blacklisted PRs, refuses PRs where the user is neither author nor co-author, picks the right filename/date/status, and writes a stub with TODO placeholders for the body. Then fill in `description`, `tags`, and the prose sections.
+It's a small Rust binary under `scripts/add-pr/` (invoked via `cargo run`) that calls the GitHub API through `gh`, refuses blacklisted PRs, refuses PRs where the user is neither author nor co-author, picks the right filename/date/status, and writes a stub with TODO placeholders for the body. Then fill in `description`, `tags`, and the prose sections.
+
+First run will compile the Rust binary (~15s); subsequent runs are instant.
 
 ## When removing a PR entry
 

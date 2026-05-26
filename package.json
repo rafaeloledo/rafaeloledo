@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "add-pr": "node scripts/add-pr.mjs"
+    "add-pr": "cargo run --quiet --release --manifest-path scripts/add-pr/Cargo.toml --"
   },
   "dependencies": {
     "react": "^19.0.0",

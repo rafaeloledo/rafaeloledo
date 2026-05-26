@@ -25,3 +25,6 @@ bun.lock
 
 # TypeScript build info
 *.tsbuildinfo
+
+# Rust build output (scripts/add-pr)
+scripts/**/target
