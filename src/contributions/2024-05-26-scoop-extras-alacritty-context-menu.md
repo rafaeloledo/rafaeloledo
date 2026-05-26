@@ -30,8 +30,8 @@ Discovered and fixed a related bug in the Sublime Text manifest where the contex
 
 ## Relation to other PRs
 
-This PR was the earliest in a series of context menu additions I contributed to Scoop Extras (followed by Neovide #13439 and WezTerm #13908). It was ultimately closed in favor of a more unified approach, but the pattern established here was carried forward in the merged PRs.
+This PR was the earliest in a series of context menu additions I contributed to Scoop Extras (followed by Neovide #13439 and WezTerm #13908). It was closed without direct merge, but the fix did land in the repository — a follow-up PR was opened with the same change and I was credited as co-author on the merge.
 
 ## Status
 
-🔴 **Closed** — superseded by a cleaner implementation approach adopted in subsequent PRs.
+🔴 **Closed** — the PR itself was closed, but the context menu fix was merged through a follow-up PR with co-authorship credit.
