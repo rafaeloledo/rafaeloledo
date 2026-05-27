@@ -62,7 +62,7 @@ export default function MusicPost() {
                 mechanism routes this to the YouTube Music app if installed.
                 No JS tricks: intent:// is Chrome-only and unreliable. */}
             <a
-              href={`https://music.youtube.com/watch?v=${music.youtube}`}
+              href={`https://app.music.youtube.com/watch?v=${music.youtube}`}
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-mono text-base-content/60 hover:text-primary border border-base-300 hover:border-primary px-3 py-1.5 transition-colors"
             >
