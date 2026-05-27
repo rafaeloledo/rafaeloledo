@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
-import { getMusic, getMusicThumb } from '../lib/music';
+import { getMusic } from '../lib/music';
+import { MusicThumb } from '../components/MusicThumb';
 import { Markdown } from '../components/Markdown';
 import NotFound from './NotFound';
 
@@ -15,23 +16,9 @@ export default function MusicPost() {
         <ArrowLeft size={12} /> cd ../music
       </Link>
 
-      {getMusicThumb(music) && (
-        <div className="hud-frame mb-6 overflow-hidden">
-          <img
-            src={getMusicThumb(music)}
-            alt={music.title}
-            className="w-full max-h-72 object-cover"
-            onError={(e) => {
-              const img = e.currentTarget;
-              if (music.youtube && img.src.includes('maxresdefault')) {
-                img.src = `https://i.ytimg.com/vi/${music.youtube}/hqdefault.jpg`;
-              } else if (music.thumb && img.src !== music.thumb) {
-                img.src = music.thumb;
-              } else {
-                img.parentElement!.style.display = 'none';
-              }
-            }}
-          />
+      {(music.youtube || music.thumb) && (
+        <div className="hud-frame mb-6 overflow-hidden max-h-72">
+          <MusicThumb music={music} className="w-full max-h-72 object-cover" />
         </div>
       )}
 
@@ -73,6 +60,20 @@ export default function MusicPost() {
           <div className="pt-3">
             <a
               href={`https://music.youtube.com/watch?v=${music.youtube}`}
+              onClick={(e) => {
+                e.preventDefault();
+                const webUrl = `https://music.youtube.com/watch?v=${music.youtube}`;
+                // Android Chrome supports intent:// URIs to open specific apps.
+                // The browser_fallback_url is used on iOS / desktop.
+                if (/Android/i.test(navigator.userAgent)) {
+                  window.location.href =
+                    `intent://music.youtube.com/watch?v=${music.youtube}` +
+                    `#Intent;scheme=https;package=com.google.android.apps.youtube.music` +
+                    `;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
+                } else {
+                  window.location.href = webUrl;
+                }
+              }}
               className="inline-flex items-center gap-2 text-xs font-mono text-base-content/60 hover:text-primary border border-base-300 hover:border-primary px-3 py-1.5 transition-colors"
             >
               <ExternalLink size={11} />
