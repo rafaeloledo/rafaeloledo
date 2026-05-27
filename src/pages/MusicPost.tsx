@@ -59,13 +59,13 @@ export default function MusicPost() {
         {music.youtube && (
           <div className="pt-3">
             <a
-              href={`https://www.youtube.com/watch?v=${music.youtube}`}
+              href={`https://music.youtube.com/watch?v=${music.youtube}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-mono text-base-content/60 hover:text-primary border border-base-300 hover:border-primary px-3 py-1.5 transition-colors"
             >
               <ExternalLink size={11} />
-              ouvir no YouTube
+              ouvir no YouTube Music
             </a>
           </div>
         )}
