@@ -10,7 +10,7 @@ lyricist: Hitomi Mieno
 anime: Witch Hunter Robin
 year: 2002
 thumb: /music/shell-witch-hunter-robin.svg
-youtube: YVu6AtSsgo8
+youtube: rK8Xr7wyRIg
 ---
 
 ## Letra Original (日本語)
