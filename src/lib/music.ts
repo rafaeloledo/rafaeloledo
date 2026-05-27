@@ -9,7 +9,16 @@ export type Music = {
   anime?: string;
   year?: string;
   thumb?: string;
+  youtube?: string;
 };
+
+/** Returns the best available thumbnail URL for a music entry.
+ *  Prefers the YouTube maxresdefault; the component should add an
+ *  onError fallback to hqdefault and then to thumb. */
+export function getMusicThumb(m: Music): string | undefined {
+  if (m.youtube) return `https://i.ytimg.com/vi/${m.youtube}/maxresdefault.jpg`;
+  return m.thumb;
+}
 
 function parseFrontmatter(raw: string): { data: Record<string, any>; body: string } {
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
@@ -68,6 +77,7 @@ export const musics: Music[] = Object.entries(modules)
       anime: data.anime,
       year: data.year,
       thumb: data.thumb,
+      youtube: data.youtube,
     } as Music;
   })
   .sort((a, b) => (a.date < b.date ? 1 : -1));

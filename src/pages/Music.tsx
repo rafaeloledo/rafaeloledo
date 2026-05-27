@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Music2 } from 'lucide-react';
-import { musics } from '../lib/music';
+import { musics, getMusicThumb } from '../lib/music';
 
 export default function Music() {
   const [q, setQ] = useState('');
@@ -75,8 +75,22 @@ export default function Music() {
           <li key={m.slug}>
             <Link to={`/music/${m.slug}`} className="flex gap-4 px-4 py-4 hover:bg-base-200 transition">
               <div className="shrink-0 w-16 h-16 bg-base-300/50 border border-base-300 overflow-hidden">
-                {m.thumb ? (
-                  <img src={m.thumb} alt={m.title} className="w-full h-full object-cover" />
+                {getMusicThumb(m) ? (
+                  <img
+                    src={getMusicThumb(m)}
+                    alt={m.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const img = e.currentTarget;
+                      if (m.youtube && img.src.includes('maxresdefault')) {
+                        img.src = `https://i.ytimg.com/vi/${m.youtube}/hqdefault.jpg`;
+                      } else if (m.thumb && img.src !== m.thumb) {
+                        img.src = m.thumb;
+                      } else {
+                        img.style.display = 'none';
+                      }
+                    }}
+                  />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-base-content/30">
                     <Music2 size={24} />

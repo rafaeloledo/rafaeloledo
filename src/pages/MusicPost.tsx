@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { getMusic } from '../lib/music';
+import { getMusic, getMusicThumb } from '../lib/music';
 import { Markdown } from '../components/Markdown';
 import NotFound from './NotFound';
 
@@ -15,12 +15,22 @@ export default function MusicPost() {
         <ArrowLeft size={12} /> cd ../music
       </Link>
 
-      {music.thumb && (
+      {getMusicThumb(music) && (
         <div className="hud-frame mb-6 overflow-hidden">
           <img
-            src={music.thumb}
+            src={getMusicThumb(music)}
             alt={music.title}
             className="w-full max-h-72 object-cover"
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (music.youtube && img.src.includes('maxresdefault')) {
+                img.src = `https://i.ytimg.com/vi/${music.youtube}/hqdefault.jpg`;
+              } else if (music.thumb && img.src !== music.thumb) {
+                img.src = music.thumb;
+              } else {
+                img.parentElement!.style.display = 'none';
+              }
+            }}
           />
         </div>
       )}

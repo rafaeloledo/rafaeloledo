@@ -9,6 +9,7 @@ composer: Yoko Kanno
 anime: Cowboy Bebop
 year: 2004
 thumb: /music/pearls-cowboy-bebop.svg
+youtube: hV_LvfXxa30
 ---
 
 ## Sobre a faixa
