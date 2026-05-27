@@ -11,6 +11,7 @@ arranger: Hagita Mitsuo
 anime: Record of Lodoss War (ロードス島戦記)
 year: 1990
 thumb: /music/adesso-e-fortuna.svg
+youtube: n7VYDNExf1I
 ---
 
 ## Sobre a faixa
