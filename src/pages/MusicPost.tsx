@@ -58,22 +58,12 @@ export default function MusicPost() {
 
         {music.youtube && (
           <div className="pt-3">
+            {/* Plain music.youtube.com URL — the OS App Links / Universal Links
+                mechanism routes this to the YouTube Music app if installed.
+                No JS tricks: intent:// is Chrome-only and unreliable. */}
             <a
               href={`https://music.youtube.com/watch?v=${music.youtube}`}
-              onClick={(e) => {
-                e.preventDefault();
-                const webUrl = `https://music.youtube.com/watch?v=${music.youtube}`;
-                // Android Chrome supports intent:// URIs to open specific apps.
-                // The browser_fallback_url is used on iOS / desktop.
-                if (/Android/i.test(navigator.userAgent)) {
-                  window.location.href =
-                    `intent://music.youtube.com/watch?v=${music.youtube}` +
-                    `#Intent;scheme=https;package=com.google.android.apps.youtube.music` +
-                    `;S.browser_fallback_url=${encodeURIComponent(webUrl)};end`;
-                } else {
-                  window.location.href = webUrl;
-                }
-              }}
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-mono text-base-content/60 hover:text-primary border border-base-300 hover:border-primary px-3 py-1.5 transition-colors"
             >
               <ExternalLink size={11} />
