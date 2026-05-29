@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Stay Alive - Re:Zero">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0814"/>
+      <stop offset="100%" stop-color="#12101f"/>
+    </linearGradient>
+    <radialGradient id="frost-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bcd4f0" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#bcd4f0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crystal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce8fb" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#9ab8e8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6a7cc0" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="blur-md">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Falling snow / stars -->
+  <g fill="#cfe0fa" opacity="0.55">
+    <circle cx="70" cy="50" r="1"/>
+    <circle cx="140" cy="90" r="1.3"/>
+    <circle cx="210" cy="40" r="0.7"/>
+    <circle cx="300" cy="70" r="1"/>
+    <circle cx="470" cy="35" r="0.9"/>
+    <circle cx="560" cy="80" r="0.7"/>
+    <circle cx="660" cy="45" r="1.1"/>
+    <circle cx="730" cy="100" r="0.8"/>
+    <circle cx="100" cy="160" r="0.6"/>
+    <circle cx="700" cy="170" r="0.9"/>
+    <circle cx="180" cy="210" r="0.5"/>
+    <circle cx="620" cy="220" r="0.7"/>
+    <circle cx="40" cy="260" r="0.6"/>
+    <circle cx="760" cy="280" r="0.7"/>
+  </g>
+
+  <!-- Frost glow halo -->
+  <ellipse cx="400" cy="275" rx="120" ry="120" fill="url(#frost-glow)" filter="url(#blur-md)"/>
+
+  <!-- Crystal / ice shard cluster (Emilia's frost) -->
+  <g opacity="0.92">
+    <!-- central tall crystal -->
+    <polygon points="400,205 420,255 400,330 380,255" fill="url(#crystal)" filter="url(#blur-sm)"/>
+    <polygon points="400,205 420,255 400,330 380,255" fill="none" stroke="#dce8fb" stroke-width="0.8" opacity="0.5"/>
+    <!-- left crystal -->
+    <polygon points="356,235 372,270 356,322 342,270" fill="url(#crystal)" opacity="0.8"/>
+    <polygon points="356,235 372,270 356,322 342,270" fill="none" stroke="#cfe0fa" stroke-width="0.6" opacity="0.4"/>
+    <!-- right crystal -->
+    <polygon points="444,240 458,272 444,318 432,272" fill="url(#crystal)" opacity="0.78"/>
+    <polygon points="444,240 458,272 444,318 432,272" fill="none" stroke="#cfe0fa" stroke-width="0.6" opacity="0.4"/>
+    <!-- small shards -->
+    <polygon points="320,262 330,282 320,310 311,282" fill="url(#crystal)" opacity="0.6"/>
+    <polygon points="480,258 489,280 480,312 472,280" fill="url(#crystal)" opacity="0.6"/>
+  </g>
+
+  <!-- Puzzle piece outline (未完成のパズル) -->
+  <g stroke="#9ab8e8" stroke-width="1.4" fill="none" opacity="0.4">
+    <path d="M362,360 h26 a8 8 0 0 1 16 0 h26 v26 a8 8 0 0 1 0 16 v8 h-68 v-8 a8 8 0 0 0 0 -16 z"/>
+  </g>
+
+  <!-- Snowflake accents -->
+  <g stroke="#cfe0fa" stroke-width="1" opacity="0.35">
+    <g transform="translate(150,300)">
+      <line x1="0" y1="-12" x2="0" y2="12"/>
+      <line x1="-10" y1="-6" x2="10" y2="6"/>
+      <line x1="-10" y1="6" x2="10" y2="-6"/>
+    </g>
+    <g transform="translate(650,300)">
+      <line x1="0" y1="-12" x2="0" y2="12"/>
+      <line x1="-10" y1="-6" x2="10" y2="6"/>
+      <line x1="-10" y1="6" x2="10" y2="-6"/>
+    </g>
+  </g>
+
+  <!-- Corner brackets -->
+  <g stroke="#9ab8e8" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M20 20 L20 55 M20 20 L55 20"/>
+    <path d="M780 20 L780 55 M780 20 L745 20"/>
+    <path d="M20 430 L20 395 M20 430 L55 430"/>
+    <path d="M780 430 L780 395 M780 430 L745 430"/>
+  </g>
+
+  <!-- Top chrome bar -->
+  <rect x="0" y="0" width="800" height="2.5" fill="#9ab8e8" opacity="0.7"/>
+
+  <!-- HUD labels -->
+  <text x="34" y="42" font-family="'Courier New', monospace" font-size="11" fill="#9ab8e8" opacity="0.55" letter-spacing="2.5">§ MUSIC · /re-zero</text>
+  <text x="766" y="42" font-family="'Courier New', monospace" font-size="11" fill="#9ab8e8" opacity="0.45" letter-spacing="2" text-anchor="end">2016</text>
+
+  <!-- Divider above title -->
+  <line x1="150" y1="130" x2="650" y2="130" stroke="#9ab8e8" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Main title -->
+  <text x="400" y="110" font-family="'Georgia', 'Times New Roman', serif" font-size="60" fill="#e6eefc"
+        text-anchor="middle" letter-spacing="9" font-style="italic" opacity="0.94">STAY ALIVE</text>
+
+  <!-- Glitch layers -->
+  <text x="402" y="110" font-family="'Georgia', serif" font-size="60" fill="#6a8fd0"
+        text-anchor="middle" letter-spacing="9" font-style="italic" opacity="0.10">STAY ALIVE</text>
+  <text x="398" y="112" font-family="'Georgia', serif" font-size="60" fill="#c8d8f4"
+        text-anchor="middle" letter-spacing="9" font-style="italic" opacity="0.07">STAY ALIVE</text>
+
+  <!-- Divider below title -->
+  <line x1="150" y1="135" x2="650" y2="135" stroke="#9ab8e8" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Artist -->
+  <text x="400" y="162" font-family="'Courier New', monospace" font-size="13" fill="#9ab8e8"
+        text-anchor="middle" letter-spacing="4" opacity="0.8">EMILIA  ·  RIE TAKAHASHI</text>
+
+  <!-- Anime title bottom -->
+  <text x="400" y="418" font-family="'Courier New', monospace" font-size="11" fill="#e6eefc"
+        text-anchor="middle" letter-spacing="3" opacity="0.3">Re:ZERO −STARTING LIFE IN ANOTHER WORLD−  ED2</text>
+
+  <!-- Bottom status -->
+  <text x="34" y="438" font-family="'Courier New', monospace" font-size="9" fill="#9ab8e8" opacity="0.3" letter-spacing="1.5">SYS:ONLINE · MODE:PLAYBACK</text>
+  <text x="766" y="438" font-family="'Courier New', monospace" font-size="9" fill="#9ab8e8" opacity="0.3" letter-spacing="1.5" text-anchor="end">日本語 · VOCAL</text>
+</svg>
