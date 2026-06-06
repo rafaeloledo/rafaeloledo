@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0612"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="45%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="twilight-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#c026d3" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#c026d3" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="portal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f1f5f9" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="blur-md">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="blur-lg">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle grid (digital world) -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#818cf8" stroke-width="0.3" stroke-opacity="0.07"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#818cf8" stroke-width="0.3" stroke-opacity="0.07"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#818cf8" stroke-width="0.3" stroke-opacity="0.07"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#818cf8" stroke-width="0.3" stroke-opacity="0.07"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#818cf8" stroke-width="0.3" stroke-opacity="0.07"/>
+
+  <!-- Chrome bar top -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#chrome)"/>
+
+  <!-- Outer border -->
+  <rect x="20" y="20" width="760" height="410" fill="none" stroke="#7c3aed" stroke-width="0.75" stroke-opacity="0.3"/>
+
+  <!-- Corner brackets TL -->
+  <polyline points="12,44 12,12 44,12" fill="none" stroke="#818cf8" stroke-width="2"/>
+  <!-- Corner brackets TR -->
+  <polyline points="788,44 788,12 756,12" fill="none" stroke="#818cf8" stroke-width="2"/>
+  <!-- Corner brackets BL -->
+  <polyline points="12,406 12,438 44,438" fill="none" stroke="#818cf8" stroke-width="2"/>
+  <!-- Corner brackets BR -->
+  <polyline points="788,406 788,438 756,438" fill="none" stroke="#818cf8" stroke-width="2"/>
+
+  <!-- HUD label top-left -->
+  <text x="32" y="44" font-family="'Courier New', monospace" font-size="11" fill="#818cf8" opacity="0.55" letter-spacing="2.5">§ MUSIC · /hack-sign</text>
+
+  <!-- HUD label top-right -->
+  <text x="768" y="44" font-family="'Courier New', monospace" font-size="11" fill="#f97316" opacity="0.45" letter-spacing="2" text-anchor="end">2002</text>
+
+  <!-- Moon glow behind portal -->
+  <ellipse cx="400" cy="265" rx="150" ry="120" fill="url(#moon-glow)" filter="url(#blur-lg)"/>
+
+  <!-- Moon / portal circle -->
+  <circle cx="400" cy="285" r="72" fill="url(#portal)" stroke="#f97316" stroke-width="0.8" stroke-opacity="0.35"/>
+  <circle cx="400" cy="285" r="58" fill="none" stroke="#818cf8" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle cx="400" cy="285" r="40" fill="none" stroke="#c026d3" stroke-width="0.4" stroke-opacity="0.18"/>
+
+  <!-- Twilight rays from portal -->
+  <path d="M400,215 L395,170 L405,170 Z" fill="url(#twilight-grad)" opacity="0.3"/>
+  <path d="M400,215 L350,165 L360,158 Z" fill="url(#twilight-grad)" opacity="0.18"/>
+  <path d="M400,215 L450,165 L440,158 Z" fill="url(#twilight-grad)" opacity="0.18"/>
+
+  <!-- Data fragments (floating hex-like particles) -->
+  <text x="130" y="240" font-family="'Courier New', monospace" font-size="9" fill="#818cf8" opacity="0.2" letter-spacing="1">0x4B45 59</text>
+  <text x="570" y="310" font-family="'Courier New', monospace" font-size="9" fill="#7c3aed" opacity="0.2" letter-spacing="1">FF A3 2D 01</text>
+  <text x="80" y="320" font-family="'Courier New', monospace" font-size="8" fill="#c026d3" opacity="0.15">∴ THE WORLD</text>
+  <text x="620" y="230" font-family="'Courier New', monospace" font-size="8" fill="#f97316" opacity="0.18">SYS:SIGN</text>
+
+  <!-- Horizontal divider -->
+  <line x1="200" y1="168" x2="600" y2="168" stroke="#f97316" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- KEY OF THE TWILIGHT — main title (two lines) -->
+  <text x="400" y="120" font-family="'Georgia', 'Cormorant Garamond', serif" font-size="44" fill="#f1f5f9"
+    text-anchor="middle" letter-spacing="10" font-style="italic" opacity="0.90">KEY OF THE</text>
+  <text x="400" y="160" font-family="'Georgia', 'Cormorant Garamond', serif" font-size="44" fill="#f1f5f9"
+    text-anchor="middle" letter-spacing="10" font-style="italic" opacity="0.90">TWILIGHT</text>
+
+  <!-- Glitch layer 1 -->
+  <text x="402" y="120" font-family="'Georgia', serif" font-size="44" fill="#818cf8"
+    text-anchor="middle" letter-spacing="10" font-style="italic" opacity="0.10">KEY OF THE</text>
+  <text x="402" y="160" font-family="'Georgia', serif" font-size="44" fill="#818cf8"
+    text-anchor="middle" letter-spacing="10" font-style="italic" opacity="0.10">TWILIGHT</text>
+
+  <!-- Glitch layer 2 -->
+  <text x="398" y="122" font-family="'Georgia', serif" font-size="44" fill="#f97316"
+    text-anchor="middle" letter-spacing="10" font-style="italic" opacity="0.07">KEY OF THE</text>
+
+  <!-- Divider below title -->
+  <line x1="200" y1="173" x2="600" y2="173" stroke="#f97316" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- Artist name -->
+  <text x="400" y="203" font-family="'Courier New', monospace" font-size="13" fill="#818cf8"
+    text-anchor="middle" letter-spacing="4" opacity="0.8">EMILY BINDIGER  ·  YUKI KAJIURA</text>
+
+  <!-- Anime title bottom -->
+  <text x="400" y="415" font-family="'Courier New', monospace" font-size="11" fill="#f1f5f9"
+    text-anchor="middle" letter-spacing="3" opacity="0.35">.hack//SIGN  OST</text>
+
+  <!-- Bottom status line -->
+  <text x="32" y="435" font-family="'Courier New', monospace" font-size="9" fill="#818cf8" opacity="0.3" letter-spacing="1.5">SYS:ONLINE · MODE:PLAYBACK</text>
+  <text x="768" y="435" font-family="'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.3" letter-spacing="1.5" text-anchor="end">TRACK 01/∞</text>
+</svg>
