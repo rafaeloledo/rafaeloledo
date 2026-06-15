@@ -24,33 +24,87 @@ Hirasawa não pertence a nenhuma cena em particular. Ele é próximo demais do i
 
 ```
 あー 氷劫の姿を見せず
+Ah~ hikō no sugata wo misezu
 海はうねりをキミの夢に得た
+Umi wa uneri wo kimi no yume ni eta
 あー めいめいに咲いては枯れる
+Ah~ meimei ni saite wa kareru
 花のような波間のしぶきを見せ
+Hana no yōna namima no shibuki wo mise
 
 あー 思い出せないキミは遥か 海よりまだ
+Ah~ omoidasenai kimi wa haruka umi yori mada
 
 あー 低空に雲が重く垂れ
+Ah~ teikū ni kumo ga omoku tare
 急いで砂は沖へ運ばれた
+Isoide suna wa oki e hakobareta
 あー いつか消えると知った
+Ah~ itsuka kieru to shitta
 あの日人が見せた津波は何故
+Ano hi hito ga miseta tsunami wa naze
 
 あー 思い出せない海は遥か キミよりまだ
+Ah~ omoidasenai umi wa haruka kimi yori mada
 
 在るべく月は昇り 人の夢を写すよ
+Arubeku tsuki wa nobori hito no yume wo utsusuyo
 成すべく月は照らし 望む波を見せる
+Nasubeku tsuki wa terashi nozomu nami wo miseru
 
 あー 氷劫の姿を見せず
+Ah~ hikō no sugata wo misezu
 星は光を人の影に得た
+Hoshi wa hikari wo hito no kage ni eta
 あー 淡く微かと知った
+Ah~ awaku kasuka to shitta
 あの日キミが耐えた嵐もなく
+Ano hi kimi ga taeta arashi monaku
 
 あー 思い出せない海は遥か 星よりまだ
+Ah~ omoidasenai umi wa haruka hoshi yori mada
 
 在るべく月は昇り 人の夢を写すよ
+Arubeku tsuki wa nobori hito no yume wo utsusuyo
 成すべく月は照らし 望む波を見せるよ
+Nasubeku tsuki wa terashi nozomu nami wo miseruyo
 吹くべく風は走り 人の思慮に染まるよ
+Fukubeku kaze wa hashiri hito no shiryō ni somaruyo
 行くべく星は移り 望む答え見せる
+Yukubeku hoshi wa utsuri nozomu kotae miseru
+```
+
+## Tradução
+
+```
+Ah~ without showing the face of the eternal ice
+the sea found its swell within your dreams
+Ah~ each one blooming and withering in turn
+show the spray between the waves, like flowers
+
+Ah~ the you I cannot remember is far — farther still than the sea
+
+Ah~ clouds hang heavy at low altitude
+the sand was hurried away offshore
+Ah~ knowing it would someday vanish
+why the tsunami that people showed on that day
+
+Ah~ the sea I cannot remember is far — farther still than you
+
+The moon rises as it should, reflecting people's dreams
+the moon shines as it must, showing the wished-for waves
+
+Ah~ without showing the face of the eternal ice
+the stars found their light in the shadows of people
+Ah~ knowing it was pale and barely there
+on that day, not even the storm you endured
+
+Ah~ the sea I cannot remember is far — farther still than the stars
+
+The moon rises as it should, reflecting people's dreams
+the moon shines as it must, showing the wished-for waves
+the wind runs as it must, steeped in people's thoughts
+the stars drift as they must, showing the wished-for answers
 ```
 
 ## Notas
