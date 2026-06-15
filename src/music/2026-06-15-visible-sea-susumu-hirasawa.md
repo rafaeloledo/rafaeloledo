@@ -20,6 +20,39 @@ Hirasawa não pertence a nenhuma cena em particular. Ele é próximo demais do i
 
 "Visible Sea" captura bem essa qualidade. A melodia principal aparece com clareza mas nunca soa óbvia; o arranjo cresce sem pressa e resolve sem ansiedade. Para quem está começando a entrar no mundo de Hirasawa, é uma porta de entrada menos densa do que outras faixas; para quem já conhece o artista, é um daqueles momentos em que o estilo se apresenta em forma quase pura.
 
+## Letra
+
+```
+あー 氷劫の姿を見せず
+海はうねりをキミの夢に得た
+あー めいめいに咲いては枯れる
+花のような波間のしぶきを見せ
+
+あー 思い出せないキミは遥か 海よりまだ
+
+あー 低空に雲が重く垂れ
+急いで砂は沖へ運ばれた
+あー いつか消えると知った
+あの日人が見せた津波は何故
+
+あー 思い出せない海は遥か キミよりまだ
+
+在るべく月は昇り 人の夢を写すよ
+成すべく月は照らし 望む波を見せる
+
+あー 氷劫の姿を見せず
+星は光を人の影に得た
+あー 淡く微かと知った
+あの日キミが耐えた嵐もなく
+
+あー 思い出せない海は遥か 星よりまだ
+
+在るべく月は昇り 人の夢を写すよ
+成すべく月は照らし 望む波を見せるよ
+吹くべく風は走り 人の思慮に染まるよ
+行くべく星は移り 望む答え見せる
+```
+
 ## Notas
 
 - Susumu Hirasawa é conhecido internacionalmente pelas trilhas de obras do diretor **Satoshi Kon** — *Millennium Actress* (2001), *Paranoia Agent* (2004) e *Paprika* (2006) — que levaram seu som a uma audiência global de cinema de animação.
